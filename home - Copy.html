@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhyno EV</title>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #FAFAFA;
+            margin: 0;
+            padding: 0;
+        }
+        .header, .footer {
+            background-color: #2C2A2A;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        .header nav ul li a, .footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .prebook-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    background-color: #F9ED32;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.prebook-btn:hover {
+    background-color: #FFD700;
+    color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+        .footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        .content {
+            text-align: center;
+            padding: 50px;
+        }
+        .content h1 {
+            color: #414141;
+        }
+        p{
+            
+            padding-bottom:120px;
+            text-align: center;
+            color: rgb(88, 88, 245);
+            
+        }
+        h1{
+            padding-top: 160px;
+         color: red
+        }
+        a:hover{
+            pad: 20px;
+        background-color: #867f7f;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="data:image/jpeg;base64,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" alt="Rhyno EV Logo" style="height: 80px;">
+        <nav>
+            <ul>                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+             
+                        <li><a href="se03lite.html">SE03 Lite</a></li>
+                        <li><a href="se03.html">SE03</a></li>
+                        <li><a href="se03max.html">SE03 Max</a></li>
+                        <li><a href="compareall.html">Compare All</a></li>
+                   
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="prebook.html">Pre-Book Now</a></li>
+            </ul>
+            </nav>
+    </div>
+    <div class="content">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR03VtQLwTIBacdl7GjEj7tgMOXonMO2UM7bDiq4ws1eMlz4dyCFuYbV8TMCSqTrsedBiQ&usqp=CAU" alt="se03 models">
+        <h1 >Welcome to Rhyno EV</h1>
+        <p>Discover our range of electric vehicles designed for elegance, comfort, and safety.</p>
+        <br>Explore our electric scooter models and pre-book your ride now!
+    </div>
+    <a href="#" class="prebook-btn">Pre-Book Now</a></div>
+    <div class="footer">
+        <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="refund.html">Refund Policy</a></li>
+            <li><a href="website.html">Website Policy</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="se03lite.html">Products</a></li>
+            <li><a href="https://www.linkedin.com/company/rhyno-wheels" target="_blank">Career</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="https://www.instagram.com/rhyno_ev" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/company/rhyno-wheels" target="_blank">LinkedIn</a></li>
+        </ul>
+    </div>
+</body>
+</html>

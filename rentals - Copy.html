@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentals - Rhyno EV</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #131313;
+        }
+
+        header {
+            background-color: #2C2A2A;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            height: 70px;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #424242;
+        }
+
+        p {
+            margin-top: 50px;
+            text-size:20px;
+        }
+
+        footer {
+            text-align: center;
+        
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #2C2A2A;
+            color: #FFFFFF;
+            position: fixed;
+            bottom:0%;
+            width: 100%;
+            
+        }
+
+        footer a {
+            color: #F9ED32;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="data:image/png;base64,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" alt="Rhyno EV Logo">
+    </header>
+    <div class="container">
+        <h1>Rentals</h1>
+        <p>Explore the roars of Rhyno at your own pace with our rental options! Test the waters
+            <br> with our flexible rental model, available for a week or a month, allowing you to 
+             <br> experience the Rhyno first hand before committing. Simply visit our authorized 
+             <br> dealerships to unlock this opportunity.
+             <br> <br>
+            Additionally, we're redefining campus commuting with our rental fleet tailored for college 
+            <br>students. Navigate your daily commute effortlessly by renting Rhyno vehicles on an hourly 
+            <br>basis through our user-friendly mobile app. Embrace the freedom to ride and explore a new 
+            <br>dimension in sustainable and convenient transportation. <br>
+            
+            Download our rental app : Android | Apple [ Buttons with icons ]
+            </p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Rhyno EV. All rights reserved. <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-conditions.html">Terms & Conditions</a></p>
+    </footer>
+</body>
+</html>

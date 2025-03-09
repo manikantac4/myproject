@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhyno SE03 Max</title>
+    <style>
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cbf2f5;
+            color: #131313;
+        }
+        h1{
+            color: green;
+        }
+        p{
+            color: rgb(209, 55, 145);
+        }
+
+        header {
+            background-color: #2C2A2A;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            height: 100px;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .color-selection {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .color-button {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 0 10px;
+            cursor: pointer;
+            border: 2px solid #131313;
+        }
+
+        .buy-now {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #F9ED32;
+            color: #131313;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buy-now:hover {
+            background-color: #FFF225;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="data:image/jpeg;base64,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" alt="Rhyno EV Logo">
+    </header>
+    <br>
+    <div class="container">
+        <h1>Rhyno SE03 Max</h1>
+        <br><br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzWHBkxPKrNwrNXBBnIziNi7r5qx3uZHkeZg&s" alt="Rhyno SE03 Max" class="product-image">
+        <p><br><br>The Rhyno SE03 Max is the ultimate electric scooter with the highest performance,
+           <br>  maximum speed, and advanced features. Ideal for those who demand the best, the
+             <br> SE03 Max delivers an unmatched riding experience.This Rhyno is tuned for long 
+           <br>  drives and no thrills. Like all other variants, this machine comes with a fire-safe 
+           <br>  advanced LFP battery and all the other benefits of owning a Rhyno, along with a perfect
+           <br>   blend of battery capacity and motor power to provide up to 150 km range on a single charge. 
+          <br>    While it may not provide a thrilling ride, it promises a dependable and unwavering presence
+               on the long stretches.</p>
+        
+        <div class="color-selection">
+            <div class="color-button" style="background-color: #424242;"></div>
+            <div class="color-button" style="background-color: #2C2A2A;"></div>
+            <div class="color-button" style="background-color: #3C3C3C;"></div>
+            <div class="color-button" style="background-color: #414141;"></div>
+            <div class="color-button" style="background-color: #373737;"></div>
+        </div>
+        <a href="prebook.html" class="buy-now">Buy Now</a>
+    </div>
+</body>
+</html>

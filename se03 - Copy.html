@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhyno SE03</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #131313;
+        }
+
+        header {
+            background-color: #ff7979;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            height: 90px;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .color-selection {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .color-button {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 0 10px;
+            cursor: pointer;
+            border: 2px solid #131313;
+        }
+
+        .buy-now {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #F9ED32;
+            color: #131313;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buy-now:hover {
+            background-color: #FFF225;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        h1{
+            color: rgb(6, 6, 242);
+        }
+        p{
+            color: #ff7979;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAA
+        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" alt="Rhyno EV Logo">
+    </header>
+    <div class="container">
+        <h1>Rhyno SE03</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO9iKOBP5Mu4dckwy68pOB3l5OWNNMUNWTRyrdNg2O1foCusDvRh71fH2Rm3stoekg9Do&usqp=CAU" alt="Rhyno SE03" class="product-image">
+        <p>The Rhyno SE03 offers enhanced performance and a longer range, making it the perfect 
+           <br> choice for daily commutes and longer rides. With its advanced safety features and modern design, it's built for 
+          <br> the modern urban environment.Indulge in the perfect harmony of power and range with this Rhyno. Offering an exhilarating 
+          <br> experience with its robust 2000W  motor, it ensures a thrilling ride while still delivering an impressive 80-100km range
+           <br> on a single charge. Like its counterparts,this machine features the safety assurance of a fire-safe advanced LFP battery,
+         <br>   along with the comprehensive benefits of owning a Rhyno. Boasting a formidable combination of a 2000W motor and a 2.7kWh
+            <br> battery,this beast is ready to roar on the roads, providing an electrifying journey at every turn.
+              Check out the other details below!</p>
+        <div class="color-selection">
+            <div class="color-button" style="background-color: #424242;"></div>
+            <div class="color-button" style="background-color: #2C2A2A;"></div>
+            <div class="color-button" style="background-color: #3C3C3C;"></div>
+            <div class="color-button" style="background-color: #414141;"></div>
+            <div class="color-button" style="background-color: #373737;"></div>
+        </div>
+        <a href="prebook.html" class="buy-now">Buy Now</a>
+    </div>
+</body>
+</html>
